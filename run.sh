@@ -1,5 +1,5 @@
 #!/bin/bash
-chown www-data:www-data /app -R
+chgrp www-data /app -R
 
 if [ "$ALLOW_OVERRIDE" = "**False**" ]; then
     unset ALLOW_OVERRIDE
